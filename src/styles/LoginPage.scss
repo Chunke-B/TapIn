@@ -1,0 +1,157 @@
+@import "./variable";
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: $font-family;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  .logo {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .subheading {
+    font-size: 0.9rem;
+    color: var(--color-grey);
+  }
+}
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  &__intro {
+    display: inline-block;
+    // max-width: 20rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 0.7;
+  }
+
+  label {
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .labels {
+    color: var(--color-black-1);
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .inputText {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+    input,
+    select {
+      flex: 1;
+      border: none;
+      outline: none;
+      margin-left: 0.5rem;
+      font-family: $font-family;
+    }
+    input::placeholder {
+      color: var(--color-grey-1);
+    }
+    .toggle-password {
+      margin-left: auto;
+      cursor: pointer;
+      color: var(--color-grey);
+    }
+
+    &__icons {
+      color: var(--color-grey-1);
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+
+    //   a {
+    //     text-decoration: none;
+    //   }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: var(--color-primary);
+    }
+  }
+
+  .btn-1 {
+    width: 100%;
+    padding: 0.75rem;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    background-color: var(--color-primary-1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  &__signup {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: var(--color-primary);
+    }
+  }
+
+  .footer-help {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+.footer-text {
+  font-size: 0.9rem;
+  color: var(--color-black-1);
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+}
+
+.straight-line {
+  border-bottom: 1px solid var(--color-grey);
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap");
+:root {
+  --color-grey: #777;
+  --color-primary: #2563eb;
+  --color-primary-1: #0066ff;
+  --color-grey-1: #b5aeae;
+  --color-grey-2: #d4d1d1;
+  --color-grey-3: #efebeb;
+  --color-black-1: #3a3838;
+  --color-white: #ffff;
+  --color-light-gray: #f5f6fa;
+  --color-light-gray-1: #ecedf0;
+  --color-dark-gray: #4b5563;
+  --color-green-light: rgb(32, 206, 32);
+  --color-green-1: rgb(31, 139, 31);
+  --color-red: red;
+  --color-black-light-2: #363232;
+  --color-black-light-1: #1c1e21;
+  --border-radius: 1.2rem;
+  --border-bottom: 1px solid #e5e7eb;
+  --margin-bottom-medium: 1.5rem;
+  --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  --box-shadow-1: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 2rem 1rem !important;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+.sidebar__logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #000;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.sidebar__logo::first-letter {
+  color: var(--color-primary); /* Accent color for the "T" */
+  font-size: 3rem;
+  font-weight: 700;
+}
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: var(--color-dark-gray);
+}
+.sidebar li.active, .sidebar li:hover {
+  background-color: var(--color-light-gray);
+  font-weight: 500;
+  color: var(--color-primary-1);
+}
+.sidebar li:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+.sidebar li svg {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem;
+  }
+  .sidebar__logo {
+    display: none;
+  }
+  .sidebar nav ul {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sidebar nav ul li {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=Sidebar.css.map */

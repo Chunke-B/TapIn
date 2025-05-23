@@ -1,0 +1,36 @@
+// File: src/styles/_variables.scss
+$primary-color: #2563eb;
+$font-family: "Segoe UI", sans-serif;
+:root {
+  --color-grey: #777;
+  --color-primary: #2563eb;
+  --color-primary-1: #0066ff;
+  --color-grey-1: #555;
+  --color-grey-2: #d4d1d1;
+  --color-grey-3: #efebeb;
+  --color-black-1: #3a3838;
+  --color-white: #ffff;
+  --color-light-gray: #f5f6fa;
+  --color-light-gray-1: #ecedf0;
+  --color-dark-gray: #4b5563;
+  --color-green-light: rgb(32, 206, 32);
+  --color-green-1: rgb(31, 139, 31);
+  --color-red: red;
+  --color-black-light-2: #363232;
+  --color-black-light-1: #1c1e21;
+  --color-light-blue: #f0f6ff;
+
+  --border-radius: 1.2rem;
+
+  --border-bottom: 1px solid #e5e7eb;
+
+  --margin-bottom-medium: 1.5rem;
+
+  --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  --box-shadow-1: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+$primary-color: #007bff;
+$light-gray: #f5f6fa;
+$dark-gray: #4b5563;
+$border-radius: 12px;
