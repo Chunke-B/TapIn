@@ -1,0 +1,165 @@
+:root {
+  --color-white: #fff;
+  --color-blue: #0066ff;
+  --color-grey: #777;
+  --color-dark-grey: #444343;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to bottom, #f9fbff, var(--color-white));
+  color: #1a1a1a;
+  text-align: center;
+  line-height: 0.8;
+}
+
+/* Header Styling  */
+.logo-header img.logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.logo-text-h2 {
+  font-size: 1.6rem;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.logo-text-p {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.p-intro {
+  max-width: 35rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: center;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.formCard {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  display: inline-block;
+}
+
+.formCard_text {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.formCard__input {
+  display: flex;
+}
+
+.labels {
+  font-size: inherit;
+}
+
+.links:link,
+.links:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--color-blue);
+}
+.forget_password {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 9px 14px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--color-blue);
+}
+
+.form-combine {
+  display: block;
+  margin-bottom: 2rem;
+}
+.login-form-container h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.login-form-container p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.form-options a {
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.signin-btn {
+  background-color: #0066ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: #0066ff;
+  text-decoration: none;
+}

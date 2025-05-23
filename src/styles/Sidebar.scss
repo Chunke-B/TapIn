@@ -1,0 +1,101 @@
+@import "../styles//variable";
+@import "../styles/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap");
+
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 2rem 1rem !important;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  &__logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 2rem;
+    color: #000;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+    &::first-letter {
+      color: var(--color-primary); /* Accent color for the "T" */
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: var(--color-dark-gray);
+
+    &.active,
+    &:hover {
+      background-color: var(--color-light-gray);
+      font-weight: 500;
+      color: var(--color-primary-1);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0.7rem;
+    }
+    svg {
+      font-size: 1.2rem;
+    }
+  }
+
+  .links:link,
+  .links:visited {
+    text-decoration: none;
+    color: var(--color-dark-gray);
+
+    &.active,
+    &:hover {
+      background-color: var(--color-light-gray);
+      font-weight: 500;
+      color: var(--color-primary-1);
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem;
+
+    &__logo {
+      display: none;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      justify-content: space-around;
+
+      li {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
