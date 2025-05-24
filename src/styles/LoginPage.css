@@ -2,7 +2,7 @@
   --color-grey: #777;
   --color-primary: #2563eb;
   --color-primary-1: #0066ff;
-  --color-grey-1: #b5aeae;
+  --color-grey-1: #555;
   --color-grey-2: #d4d1d1;
   --color-grey-3: #efebeb;
   --color-black-1: #3a3838;
@@ -15,6 +15,7 @@
   --color-red: red;
   --color-black-light-2: #363232;
   --color-black-light-1: #1c1e21;
+  --color-light-blue: #f0f6ff;
   --border-radius: 1.2rem;
   --border-bottom: 1px solid #e5e7eb;
   --margin-bottom-medium: 1.5rem;
@@ -53,22 +54,12 @@
   display: flex;
   flex-direction: column;
 }
-.login-form h3 {
-  margin-bottom: 0.5rem;
-}
-.login-form p {
-  margin-bottom: 1rem;
-}
 .login-form__intro {
   display: inline-block;
   align-items: center;
   justify-content: center;
   text-align: center;
   line-height: 0.7;
-}
-.login-form label {
-  font-weight: 600;
-  margin-top: 1rem;
 }
 .login-form .labels {
   color: var(--color-black-1);
@@ -81,7 +72,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 .login-form .inputText input,
 .login-form .inputText select {
@@ -112,20 +103,34 @@
   justify-content: space-between;
   font-size: 0.85rem;
   margin-bottom: 1rem;
+  align-items: center;
 }
 .login-form .form-options a:link,
 .login-form .form-options a:visited {
   text-decoration: none;
   color: var(--color-primary);
 }
-.login-form .btn {
+.login-form .form-options .checkbos {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.login-form .form-options .checkbos-style {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.login-form .btn-1 {
   width: 100%;
   padding: 0.75rem;
-  background-color: var(--color-primary);
+  text-decoration: none;
+  display: inline-block;
+  justify-content: center;
+  background-color: var(--color-primary-1);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
 }
 .login-form__signup {
   text-align: center;

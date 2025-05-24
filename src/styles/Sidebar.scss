@@ -60,6 +60,10 @@
   .links:visited {
     text-decoration: none;
     color: var(--color-dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.5px;
 
     &.active,
     &:hover {

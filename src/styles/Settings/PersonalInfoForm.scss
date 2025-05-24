@@ -1,0 +1,41 @@
+@import "../mixins";
+.personal-info {
+  margin-top: 2rem;
+
+  &__group {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+      font-size: 0.8rem;
+      color: var(--color-grey-1);
+    }
+  }
+  &__title {
+    margin-bottom: var(--margin-bottom-medium);
+  }
+
+  &__input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: border-color 0.3s;
+
+    &:focus {
+      @include Onfocus;
+    }
+  }
+
+  &__input--readonly {
+    background-color: #f8f8f8;
+    color: #666;
+    border-color: #ddd;
+    font-style: italic;
+    cursor: not-allowed;
+  }
+}
+
+// /////// STYLING OF THE INPUT TEXT

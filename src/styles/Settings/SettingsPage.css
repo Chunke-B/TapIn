@@ -1,0 +1,82 @@
+:root {
+  --color-grey: #777;
+  --color-primary: #2563eb;
+  --color-primary-1: #0066ff;
+  --color-grey-1: #555;
+  --color-grey-2: #d4d1d1;
+  --color-grey-3: #efebeb;
+  --color-black-1: #3a3838;
+  --color-white: #ffff;
+  --color-light-gray: #f5f6fa;
+  --color-light-gray-1: #ecedf0;
+  --color-dark-gray: #4b5563;
+  --color-green-light: rgb(32, 206, 32);
+  --color-green-1: rgb(31, 139, 31);
+  --color-red: red;
+  --color-black-light-2: #363232;
+  --color-black-light-1: #1c1e21;
+  --color-light-blue: #f0f6ff;
+  --border-radius: 1.2rem;
+  --border-bottom: 1px solid #e5e7eb;
+  --margin-bottom-medium: 1.5rem;
+  --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  --box-shadow-1: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.settings-page {
+  display: flex;
+}
+.settings-container {
+  padding: 2rem;
+  flex: 1;
+  background-color: #fff;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.settings-container .save-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.settings-container .save-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary-1);
+}
+@media (max-width: 1024px) {
+  .settings .settings-container {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .settings {
+    flex-direction: column;
+  }
+  .settings .settings-container {
+    padding: 1rem;
+  }
+  .settings .save-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .settings .settings-container {
+    padding: 1rem 0.5rem;
+  }
+  .settings .save-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=SettingsPage.css.map */

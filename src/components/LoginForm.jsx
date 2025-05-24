@@ -57,15 +57,15 @@ function LoginForm() {
         <FaUniversity className="inputText__icons" />
         <select value={school} onChange={(e) => setSchool(e.target.value)}>
           <option value="">Select your school</option>
-          <option value="science">School of Science</option>
+          <option value="science">School of Medical Science</option>
           <option value="engineering">School of Engineering</option>
-          <option value="arts">School of Arts</option>
+          <option value="agriculture">School of Agriculture</option>
         </select>
       </div>
 
       <div className="form-options">
-        <label>
-          <input type="checkbox" /> Remember me
+        <label className="checkbos">
+          <input type="checkbox" className="checkbos-style" /> Remember me
         </label>
         <Link to="/reset" className="form-options__links">
           Forgot password?

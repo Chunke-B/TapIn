@@ -1,0 +1,17 @@
+.personal-info {
+  margin-top: 2rem;
+}
+.personal-info__group {
+  margin-bottom: 1rem;
+}
+.personal-info__group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.personal-info__group input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}/*# sourceMappingURL=PersonalInform.css.map */

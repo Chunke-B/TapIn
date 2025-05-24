@@ -33,14 +33,6 @@
   display: flex;
   flex-direction: column;
 
-  h3 {
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    margin-bottom: 1rem;
-  }
-
   &__intro {
     display: inline-block;
     // max-width: 20rem;
@@ -48,11 +40,6 @@
     justify-content: center;
     text-align: center;
     line-height: 0.7;
-  }
-
-  label {
-    font-weight: 600;
-    margin-top: 1rem;
   }
 
   .labels {
@@ -67,7 +54,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 
     input,
     select {
@@ -98,6 +85,7 @@
     justify-content: space-between;
     font-size: 0.85rem;
     margin-bottom: 1rem;
+    align-items: center;
 
     //   a {
     //     text-decoration: none;
@@ -107,6 +95,17 @@
     a:visited {
       text-decoration: none;
       color: var(--color-primary);
+    }
+    .checkbos {
+      display: flex;
+      //align-self: center;
+      align-items: center;
+      gap: 6px;
+
+      &-style {
+        width: 0.8rem;
+        height: 0.8rem;
+      }
     }
   }
 

@@ -1,0 +1,96 @@
+.account-settings {
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  margin-top: 1.3rem;
+}
+.account-settings__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.account-settings__group {
+  margin-bottom: 2rem;
+}
+.account-settings__group label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.account-settings__password-wrapper {
+  position: relative;
+}
+.account-settings__password-input {
+  width: 100%;
+  padding: 0.75rem;
+  padding-right: 140px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.account-settings__change-password {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.account-settings__subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+.account-settings__notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.account-settings__notification label {
+  font-size: 0.9rem;
+  color: var(--color-black-light-1);
+}
+.account-settings .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+.account-settings .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.account-settings .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+.account-settings .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.account-settings .switch input:checked + .slider {
+  background-color: #4f46e5;
+}
+.account-settings .switch input:checked + .slider:before {
+  transform: translateX(18px);
+}/*# sourceMappingURL=AccountSettings.css.map */

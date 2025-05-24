@@ -1,0 +1,34 @@
+.personal-info {
+  margin-top: 2rem;
+}
+.personal-info__group {
+  margin-bottom: 1rem;
+}
+.personal-info__group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-grey-1);
+}
+.personal-info__title {
+  margin-bottom: var(--margin-bottom-medium);
+}
+.personal-info__input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  transition: border-color 0.3s;
+}
+.personal-info__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+.personal-info__input--readonly {
+  background-color: #f8f8f8;
+  color: #666;
+  border-color: #ddd;
+  font-style: italic;
+  cursor: not-allowed;
+}/*# sourceMappingURL=PersonalInfoForm.css.map */

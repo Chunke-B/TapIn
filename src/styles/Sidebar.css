@@ -3,7 +3,7 @@
   --color-grey: #777;
   --color-primary: #2563eb;
   --color-primary-1: #0066ff;
-  --color-grey-1: #b5aeae;
+  --color-grey-1: #555;
   --color-grey-2: #d4d1d1;
   --color-grey-3: #efebeb;
   --color-black-1: #3a3838;
@@ -16,6 +16,7 @@
   --color-red: red;
   --color-black-light-2: #363232;
   --color-black-light-1: #1c1e21;
+  --color-light-blue: #f0f6ff;
   --border-radius: 1.2rem;
   --border-bottom: 1px solid #e5e7eb;
   --margin-bottom-medium: 1.5rem;
@@ -70,6 +71,22 @@
 }
 .sidebar li svg {
   font-size: 1.2rem;
+}
+.sidebar .links:link,
+.sidebar .links:visited {
+  text-decoration: none;
+  color: var(--color-dark-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8.5px;
+}
+.sidebar .links:link.active, .sidebar .links:link:hover,
+.sidebar .links:visited.active,
+.sidebar .links:visited:hover {
+  background-color: var(--color-light-gray);
+  font-weight: 500;
+  color: var(--color-primary-1);
 }
 
 /* Responsive adjustments */
