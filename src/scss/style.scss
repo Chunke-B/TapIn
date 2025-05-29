@@ -1,9 +1,9 @@
 @import "./../styles/variable";
-@import "./../styles/LoginPage.scss";
+@import "../styles/Authentication/LoginPage.scss";
 @import "./../styles/base.scss";
-@import "./../styles/ResetPassword";
+@import "../styles/Authentication/ResetPassword";
 @import "./../styles/mixins";
-@import "./../styles/Dashboard.scss";
+@import "../styles/dashboard/Dashboard.scss";
 
 // @import "./SignUpPage";
 // @import "./ResetPasswordPage";

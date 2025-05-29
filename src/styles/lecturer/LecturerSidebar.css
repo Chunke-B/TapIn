@@ -1,0 +1,52 @@
+.lecturer-sidebar {
+  width: 240px;
+  background-color: #fff;
+  height: 100vh;
+  border-right: 1px solid #e5e7eb;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.lecturer-sidebar .sidebar-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.lecturer-sidebar .sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.lecturer-sidebar .sidebar-menu .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: #4b5563;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.lecturer-sidebar .sidebar-menu .menu-item .icon {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.lecturer-sidebar .sidebar-menu .menu-item.active {
+  background-color: #e0ebff;
+  color: #2563eb;
+}
+.lecturer-sidebar .sidebar-menu .menu-item.active .icon {
+  color: #2563eb;
+}
+.lecturer-sidebar .sidebar-menu .menu-item:hover {
+  background-color: #f3f4f6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .lecturer-sidebar {
+    display: none;
+  }
+}/*# sourceMappingURL=LecturerSidebar.css.map */

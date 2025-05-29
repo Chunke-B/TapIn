@@ -1,0 +1,86 @@
+// /* StudentTable.scss */
+// .student-table {
+//   background: #fff;
+//   border-radius: 1rem;
+//   padding: 1.5rem;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+//   table {
+//     width: 100%;
+//     border-collapse: collapse;
+
+//     thead {
+//       tr {
+//         border-bottom: 1px solid #e0e0e0;
+
+//         th {
+//           text-align: left;
+//           padding: 1rem;
+//           font-size: 0.9rem;
+//           color: #555;
+//         }
+//       }
+//     }
+
+//     tbody {
+//       tr {
+//         border-bottom: 1px solid #f0f0f0;
+
+//         td {
+//           padding: 1rem;
+//           font-size: 0.95rem;
+
+//           img {
+//             width: 30px;
+//             height: 30px;
+//             border-radius: 50%;
+//             object-fit: cover;
+//           }
+
+//           .status-present {
+//             color: #16a34a;
+//             font-weight: 600;
+//           }
+
+//           .status-absent {
+//             color: #dc2626;
+//             font-weight: 600;
+//           }
+
+//           .icon-button {
+//             background: none;
+//             border: none;
+//             cursor: pointer;
+//             color: #4f46e5;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .footer {
+//     margin-top: 1rem;
+//     display: flex;
+//     justify-content: flex-end;
+//     gap: 1rem;
+
+//     .export-button {
+//       border: 1px solid #d1d5db;
+//       background: #fff;
+//       padding: 0.5rem 1rem;
+//       border-radius: 0.5rem;
+//       cursor: pointer;
+//     }
+//   }
+
+//   @media screen and (max-width: 768px) {
+//     table {
+//       font-size: 0.8rem;
+
+//       th,
+//       td {
+//         padding: 0.5rem;
+//       }
+//     }
+//   }
+// }

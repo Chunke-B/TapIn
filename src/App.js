@@ -9,6 +9,7 @@ import "./scss/style.scss";
 import StudentAttendance from "./pages/Studenttendance.jsx";
 import StudentDashboard from "./pages/StudentDashboard.jsx";
 import LogOutPage from "./pages/LogOutPage.jsx";
+import LecturerDashboard from "./pages/LecturerDashboard.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/dashboard" element={<StudentDashboard />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/logout" element={<LogOutPage />} />
+        <Route path="/lecturer/dashboard" element={<LecturerDashboard />} />
       </Routes>
     </Router>
   );

@@ -1,7 +1,7 @@
 import LoginForm from "../components/LoginForm";
 import Logo from "../components/LogoHeader";
 import Footer from "../components/Footer";
-import "../styles/LoginPage.scss";
+import "../styles/Authentication/LoginPage.scss";
 
 function LoginPage() {
   return (

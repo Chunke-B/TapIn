@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import StatsOverview from "../components/Dashboard/StatsOverview";
 import CourseList from "../components/Dashboard/CourseList";
 //import SearchFilter from "../components/Dashboard/SearchFilter";
-import "../styles/dash.scss";
+import "../styles/dashboard/dash.scss";
 import Sidebar from "../components/shared/sidebar";
 import { FiSearch, FiBell, FiChevronDown } from "react-icons/fi";
 

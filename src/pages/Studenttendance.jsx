@@ -4,7 +4,7 @@ import Header from "../components/Dashboard/Header";
 import AttendanceSummary from "../components/Dashboard/AttendanceSummary";
 import CourseTable from "../components/Dashboard/CourseTable";
 import RecentAttendance from "../components/Dashboard/RecentAttendance";
-import "../styles/Dashboard.scss";
+import "../styles/dashboard/Dashboard.scss";
 
 export default function StudentAttendance() {
   const [query, setQuery] = useState("");

@@ -2,7 +2,7 @@
 import React from "react";
 import { FiClock } from "react-icons/fi";
 import { FaQrcode, FaVideo } from "react-icons/fa";
-import "../../styles/dash.scss";
+import "../../styles/dashboard/dash.scss";
 
 const CourseCard = ({ course }) => {
   return (

@@ -1,0 +1,78 @@
+// src/styles/lecturer/AttendanceOverview.scss
+
+.attendance-overview {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .attendance-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    .course-select,
+    .date-picker {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background-color: #fff;
+      font-size: 0.95rem;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .date-picker {
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 0.95rem;
+        color: #374151;
+      }
+
+      .icon {
+        color: #6b7280;
+      }
+    }
+
+    .generate-btn {
+      background-color: var(--color-primary-1);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      .icon {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        background-color: var(--color-primary);
+      }
+    }
+  }
+}
+
+// Responsive for mobile
+@media (max-width: 600px) {
+  .attendance-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,7 +1,7 @@
 // components/SignOutModal.jsx
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
-import "../styles/SignOutModal.scss";
+import "../styles/Authentication/SignOutModal.scss";
 
 export default function SignOutModal({ onConfirm, onCancel }) {
   return (

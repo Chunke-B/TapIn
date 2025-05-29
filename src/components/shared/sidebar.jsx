@@ -7,7 +7,7 @@ import {
   FiLogOut,
 } from "react-icons/fi";
 import { FaRegCalendarCheck } from "react-icons/fa";
-import "./../../styles/Sidebar.scss";
+import "./../../styles/dashboard/Sidebar.scss";
 import { Link } from "react-router-dom";
 
 export default function Sidebar({ onLogoutClick }) {
